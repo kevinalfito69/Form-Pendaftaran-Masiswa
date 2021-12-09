@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Css -->
+    <link rel="stylesheet" href="style/css/style.css" />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <title>Form Pendaftaran Mahasiswa</title>
+  </head>
+  <body>
+    <!-- Buka Container -->
+    <div class="container">
+    <div class="row  justify-content-md-center">
+
+        <div class="col-12 text-center">
+            <h1>Data Calon Mahasiswa</h1>
+        </div>
+    </div>
+      <div class="row">
+        <!-- Form Nama lengkap -->
+        <div class="row g-3">
+          <div class="col-md-6 col-sm-6">
+            <label for="namadepan" class="form-label">Nama Depan</label>
+            <input type="text" class="form-control" placeholder="Nama Depan" aria-label="First name" />
+          </div>
+          <div class="col-md-6 col-sm-6">
+            
+            <label for="namabelakang" class="form-label">Nama Belakang</label>
+            <input type="text" class="form-control" placeholder="Nama Belakang" aria-label="Last name" />
+          </div>
+        </div>
+      </div>
+      <!-- form jenis kelamin -->
+      <div class="col-md-12 mt-3"> 
+        <label for="inputState" class="form-label">Jenis Kelamin</label>
+        <select id="inputState" class="form-select">
+          <option selected>Pilih...</option>
+          <option>Laki-Laki</option>
+          <option>Perempuan</option>
+        </select>
+      </div>
+      <!-- Form tanggal lahir -->
+      <div class="col-12 mt-3">
+        <label for="inputAddress" class="form-label">Alamat</label>
+        <input type="text" class="form-control" id="inputAddress" placeholder="alamat">
+      </div>
+      <div class="row g-3 mt-3">
+        <label for="Tanggal lahir">Tanggal Lahir</label>
+      <div class="col-4">
+         
+          <select id="inputState tanggal" class="form-select">
+            <option  selected>Tanggal...</option>
+            <script>
+                var i = 1;
+                for(i;i<=31;i++){
+                    document.write("<option>" + i + "</option>");
+                }
+            </script>
+           
+            
+            
+          </select>
+      </div>
+      <div class="col-4">
+       
+        <select id="inputState" class="form-select">
+          <option selected>Bulan...</option>
+          <option value="">-Bulan-</option>
+          <script>
+              var bulan = ["Januari", "Februari", "Maret", "April", "Mei", "Juni", "Juli", "Agustus", "September", "Oktober", "November", "Desember"];
+              for(i=0;i<=11;i++){
+                  document.write("<option>" + bulan[i] + "</option>");
+              }
+          </script>
+        </select>
+    </div>
+    <div class="col-4">
+        
+        <select id="inputState" class="form-select">
+          <option selected>Tahun...</option>
+          <script>
+            var i = 1987;
+            for(i;i<=2021;i++){
+                document.write("<option>" + i + "</option>");
+            }
+        </script>
+        </select>
+    </div>
+    </div>
+    <div class="col-12 mt-3">
+    <label for="email1" class="form-label">Alamat Email</label>
+    <input type="email" class="form-control" id="Email1" aria-describedby="emailHelp" placeholder="myemail@gmail.com">
+   
+</div>
+<!-- Form Asal sekolah -->
+<div class="row mt-3 g-3">
+<div class="col-md-8 col-sm-4 col-8">
+    <label for="inputAddress" class="form-label">Asal sekolah</label>
+    <input type="text" class="form-control" id="inputAddress" >
+  </div>
+    
+  <div class="col-md-4 col-sm-4 col-4">
+    <label for="asal" class="form-label">Tahun Lulus</label>
+    <select id="inputState" class="form-select">
+      <option selected>Tahun...</option>
+      <script>
+        var i = 2018;
+        for(i;i<=2021;i++){
+            document.write("<option>" + i + "</option>");
+        }
+    </script>
+    </select>
+  </div>
+    
+ 
+</div>
+  <!-- File -->
+  <div class="col-12 mt-3">
+    <label for="formFile" class="form-label">Upload Pas Foto</label>
+    <input class="form-control" accept="image/*" type="file" id="formFile" aria-describedby="upload">
+  </div>
+  <div id="upload" class="form-text">File berukuran max 2mb.</div>
+  <!--Form Jurusan -->
+  <div class="col-12 mt-3">
+    <label for="jurusan">Jurusan yang dipilih</label>
+     
+  <select id="jurusan" class="form-select">
+    <option selected>Jurusan...</option>
+    
+    <script>
+        var bulan = ["S1 Informatika", "S1 Elektro", "S1 Teknik Sipil", "D3 RPL", "D3 Sistem Informasi", ];
+        for(i=0;i<=4;i++){
+            document.write("<option>" + bulan[i] + "</option>");
+        }
+    </script>
+  </select>
+</div>    
+</div>
+</div>
+
+<!-- tutup container -->
+    </div>
+<div class="container ortu">
+  <!-- row data orang tua -->
+<div class="row justify-content-md-center">
+  <!-- Heading judul -->
+  <div class="col-12 text-center">
+    <h1>Data Orang tua / Wali</h1>
+</div>
+  <!-- Form Nama lengkap -->
+  <div class="row g-3">
+    <div class="col-md-6 col-sm-6">
+      <label for="namadepan" class="form-label">Nama Depan</label>
+      <input type="text" class="form-control" placeholder="Nama Depan" aria-label="First name" />
+    </div>
+    <div class="col-md-6 col-sm-6">
+      
+      <label for="namabelakang" class="form-label">Nama Belakang</label>
+      <input type="text" class="form-control" placeholder="Nama Belakang" aria-label="Last name" />
+    </div>
+  </div>
+</div>
+<!-- status -->
+<div class="col-md-12 mt-3"> 
+  <label for="inputState" class="form-label">Status Wali</label>
+  <select id="inputState" class="form-select">
+    <option selected>Pilih...</option>
+    <option>Orang tua</option>
+    <option>Wali</option>
+  </select>
+</div>
+<!-- Pekerjaan -->
+<div class="row g-3 mt-3">
+    <div class="col-md-8 col-sm-8">
+      <label for="namadepan" class="form-label">Pekerjaan</label>
+      <input type="text" class="form-control" placeholder="Nama Pekerjaan" aria-label="First name" />
+    </div>
+  <div class="col-md-4 col-sm-4">
+    <label for="namabelakang" class="form-label">Penghasilan pertahun</label>
+    <select id="inputState" class="form-select">
+      <option selected>Pilih...</option>
+      <option>&gt;12 Juta</option>
+      <option>12 Juta</option>
+      <option>&gt;12 Juta</option></select>
+  </div>
+</div>
+<!-- Tangungan -->
+
+<div class="col-12 mt-3 mb-4">
+  <label for="inputAddress" class="form-label">Jumlah Tanggungan</label>
+  <input type="text" class="form-control" id="tanggungan" >
+</div>
+<div class="d-grid gap-2 mt-5">
+  <div id="liveAlertPlaceholder"></div>
+  <button class="btn btn-warning" type="button" id="alert" >Kirim Data</button>
+
+</div>
+<!-- tutup row data ortu -->
+</div>
+
+</div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    >
+</script>
+<script>
+  var alertPlaceholder = document.getElementById('liveAlertPlaceholder')
+var alertTrigger = document.getElementById('alert')
+
+function alert(message, type) {
+  var wrapper = document.createElement('div')
+  wrapper.innerHTML = '<div class="alert alert-' + type + ' alert-dismissible" role="alert">' + message + '<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button></div>'
+
+  alertPlaceholder.append(wrapper)
+}
+
+if (alertTrigger) {
+  alertTrigger.addEventListener('click', function () {
+    alert('Data Berhasil Disimpan!!', 'success')
+  })
+}
+</script>
+
+  </body>
+</html>
